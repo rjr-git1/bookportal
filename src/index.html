@@ -10,22 +10,24 @@
   </head>
   <body>
     <header>
+      
       <div id="header-upper-div">
-      <span id="site-logo">TopLibro</span>
+       
+      <li><a href="./index.html"><span id="site-name">Aficcionados</span></a></li>
      
       </div>
 
       <div id="header-bottom-div">
-        <div class="dropdown">
+        <nav class="dropdown">
           <button class="dropbtn">Temáticas</button>
           <div class="dropdown-content">
-            <a href="#">Novedades</a>
-            <a href="#">Clásicos</a>
+            <a href="./ficcion-novedades.html">Novedades</a>
+            <a href="./ficcion-clasicos.html">Clásicos</a>
            
-          </div>
-        </div>
-         
-      <div class="search-bar">
+          </nav>
+        
+            <div class="search-bar-container">
+               
         <i class="fa fa-search" aria-hidden="true"></i>
         <input type="text name="search-bar" id="search-bar" placeholder="Buscar un libro, un autor"">
       </div>
@@ -34,14 +36,41 @@
 
           
         </div>
-        </div>
+        
         </header>
 
 
     <div class="wrapper">
-      <main class="main-index">
+      <main id="main-index">
+      <div id="featured">
+     <article id="article-featured-left">
+          <div class="wrapper-article-header">
+          <span class="article-header-span">Entrevistas</span>
+          <h2 class="article-header-title">Daryl Gregory</h2>
+        </div>
+          <a href="#"><img src="./images/Daryl_Gregory.jpg"  id="article-vignette1"alt=""></a>
+        </article>
+        <div class="flex-col">
+          <article class="article-featured">
+          <div class="wrapper-article-header">
+          <span class="article-header-span">Estreno: 24 de Noviembre!</span>
+          <h2 class="article-header-title">Ready Player One 2 de Ernest Cline</h2>
+        </div>
+          <a href="#"><img src="./images/ready_player_one.jpg"  id="article-vignette2"alt=""></a>
+        </article>
+       
+        <article class="article-featured">
+          <div class="wrapper-article-header">
+          <span class="article-header-span">Destacado</span>
+          <h2 class="article-header-title">Las 10 peliculas de ciencia ficción basadas en libros</h2>
+        </div>
+          <a href="#"><img src="./images/best_movies.jpg"  id="article-vignette3"alt=""></a>
+        </article>
+</div>
+
+      </div>
       <!--
-          <div id="antique-book"></div>-->
+          <div id="antique-book"></div>
           <section id="intro">
           <h1>Bienvenido en TOPLIBRO, el portal de literatura especializada en obras de ciencia ficción</h1>
          
@@ -77,7 +106,7 @@
                 consequatur? Minima sapiente nostrum quo voluptas doloribus autem blanditiis fugit!
                 Quasi quod nobis cupiditate error, beatae mollitia fuga maxime vero!
               </p>
-            </div>
+            </div>-->
           
         </section>
       </main>
@@ -91,8 +120,11 @@
         <div class="footer-left" id= row1>
          <h3 class="footer-title">Temáticas</h3>
          <ul>
-           <li>Libros de ficción</li>
-           <li>Libros de no-ficción</li>
+           <li>
+            <a href="./ficcion-novedades.html">Novedades</a></li>
+           <li>
+            <a href="./ficcion-clasicos.html">Clásicos</a></li>
+
          
              </div>
 

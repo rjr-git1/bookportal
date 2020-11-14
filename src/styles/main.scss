@@ -143,30 +143,64 @@ a:link {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 //Font awesome icons
 @import url('./../../node_modules/font-awesome/css/font-awesome.min.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 body {
   width: 100vw;
   height: 200vh;
 }
+h1 {
+  font-weight: 750;
+  font-size: 3rem;
+}
 
-// HEADER + NAV
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+// Logo
+
+#site-name {
+  margin-top: 30px;
+  padding-left: 30px;
+  font: 2rem 'Pacifico', cursive;
+  color: #f9f9f9;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+//Header and nav
+
 header {
   width: 100vw;
   height: 10vh;
+  background-color: #302b2b;
+  font-family: 'Roboto', sans-serif;
   border-bottom: 1px solid #e7ebef;
   display: flex;
   flex-direction: column;
+  background-image: url(../images/ficition_image_bg.jpg);
+  background-repeat: repeat;
+  background-position: center bottom;
+  background-size: auto;
+  margin-bottom: 30px;
 }
 
 #header-upper-div {
   width: 100vw;
-  height: 15vh;
+  height: 8vh;
 }
 
 #header-bottom-div {
   width: 100%;
-  height: 10vh;
-  background: aqua;
+  height: vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -180,11 +214,12 @@ header {
   padding: 16px;
   font-size: 16px;
   border: none;
+  margin-right: 20px;
 }
 
 .dropdown {
   position: relative;
-  right: 160px;
+  //right: 140px;
 }
 
 .dropdown-content {
@@ -194,7 +229,9 @@ header {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 999;
+  opacity: 0.7;
+  // filter: grayscale(90%);
 }
 
 .dropdown-content a {
@@ -215,58 +252,113 @@ header {
 }
 
 //Search bar.
-.search-bar {
-  width: 40%;
-  height: 60px;
+.search-bar-container {
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  position: relative;
-  right: 140px;
+  margin-right: 20px;
 }
+
 #search-bar {
-  width: 440px;
-  height: 40px;
+  width: 500px;
+  height: 43px;
+}
+.fa-search {
+  position: relative;
+  left: 30px;
+  top: 10px;
+  color: #afabab;
+}
+
+::placeholder {
+  color: #afabab;
+  position: relative;
+  left: 30px;
 }
 
 #search-btn {
+  background-color: #4184e2;
+  color: #f9f9f9;
   width: 80px;
-  height: 40px;
+  height: 48px;
 }
 
-#site-logo {
-  margin-left: 120px;
-  padding: 20px 20px;
-  border-left: 1px solid #e7ebef;
-  border-right: 1px solid #e7ebef;
-  text-transform: uppercase;
-  color: red;
+#search-btn:hover {
+  background-color: #216fa4;
 }
 
-.sub-nav h6 {
-  font-weight: bold;
+//MAIN index.html
+.wrapper-article-header {
+  color: white;
+  font-weight: 1000;
+  position: relative;
+  top: 80px;
+  left: 5px;
+  z-index: 1;
 }
-
-.text-indent {
-  width: 10px;
-  margin-right: 6px;
-}
-//MAIN
-
-main {
-  background-color: #e3e3e8;
-}
-.wrapper {
+.article-featured {
+  background-color: blue;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
+
+#ready-player-one-vignette {
+}
+
+.article-header-title {
+  width: 300px;
+  position: relative;
+  font-size: 1.3rem;
+  top: 10px;
+  z-index: 1;
+}
+.article-header-span {
+  font-size: 0.8rem;
+  background-color: #979797;
+}
+
+#article-vignette1 {
+  width: 100%;
+  height: 500px;
+}
+#article-vignette2 {
+  width: 100%;
+  height: auto;
+}
+
+#article-vignette3 {
+  width: 100%;
+  height: auto;
+}
+
+#featured img:hover {
+  background-color: red;
+  opacity: 0.8;
+  //transform: scale(1.01);
+}
+
 .main-index {
-  max-width: 50vw;
+  max-width: 100vw;
   height: 130vh;
   padding: 20px 20px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#featured {
+  width: 60vh;
+  height: 100%;
+  display: flex;
+  flex-direction: flex-row;
+  justify-content: center;
 }
 
 section {
@@ -281,7 +373,7 @@ section {
   background-size: contain;
   margin: 0 auto;
   margin-bottom: 50px;
-}*/
+}
 
 #intro {
   display: flex;
@@ -304,21 +396,7 @@ section {
 #intro h2 {
   padding: 20px 30px;
 }
-
-h1 {
-  font-weight: 750;
-  font-size: 2rem;
-}
-
-h2 {
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-weight: 400;
-  font-size: 1.3rem;
-}
+*/
 
 a:visited {
   color: inherit;
@@ -424,7 +502,7 @@ footer ul li {
   padding-top: 40px;
 }
 
-//FICCION
+//Novedades.html
 
 .main-categories {
   max-width: 50vw;
@@ -433,6 +511,10 @@ footer ul li {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+}
+.text-indent {
+  width: 10px;
+  margin-right: 6px;
 }
 
 #sub-nav ol {
