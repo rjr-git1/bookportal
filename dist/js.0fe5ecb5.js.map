@@ -1,0 +1,1 @@
+{"version":3,"sources":["../js/index.js"],"names":["console","log","name"],"mappings":";;;AAKA,aALA,QAAA,uBAEAA,QAAQC,IAAI,QAEZ,IAAMC,EAAO,QACbF,QAAQC,IAAaC,SAAAA,OAAAA","file":"js.0fe5ecb5.js","sourceRoot":"../src/html","sourcesContent":["import '../styles/main.scss'\r\n\r\nconsole.log(\"test\")\r\n\r\nconst name = 'world';\r\nconsole.log(`Hello ${name}`);"]}

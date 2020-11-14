@@ -1,0 +1,517 @@
+/*CSS RESET from   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: 300;
+  font-size: 100%;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #585858;
+}
+a:link {
+  color: inherit;
+}
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+//Font awesome icons
+@import url('./../../node_modules/font-awesome/css/font-awesome.min.css');
+
+body {
+  width: 100vw;
+  height: 200vh;
+}
+
+// HEADER + NAV
+header {
+  width: 100vw;
+  height: 10vh;
+  border-bottom: 1px solid #e7ebef;
+  display: flex;
+  flex-direction: column;
+}
+
+#header-upper-div {
+  width: 100vw;
+  height: 15vh;
+}
+
+#header-bottom-div {
+  width: 100%;
+  height: 10vh;
+  background: aqua;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3b3b3b;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  right: 160px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 10;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #4184e2;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #5c5959;
+}
+
+//Search bar.
+.search-bar {
+  width: 40%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  right: 140px;
+}
+#search-bar {
+  width: 440px;
+  height: 40px;
+}
+
+#search-btn {
+  width: 80px;
+  height: 40px;
+}
+
+#site-logo {
+  margin-left: 120px;
+  padding: 20px 20px;
+  border-left: 1px solid #e7ebef;
+  border-right: 1px solid #e7ebef;
+  text-transform: uppercase;
+  color: red;
+}
+
+.sub-nav h6 {
+  font-weight: bold;
+}
+
+.text-indent {
+  width: 10px;
+  margin-right: 6px;
+}
+//MAIN
+
+main {
+  background-color: #e3e3e8;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.main-index {
+  max-width: 50vw;
+  height: 130vh;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 50px;
+}
+/*
+#antique-book {
+  width: 1200px;
+  height: 800px;
+  background-image: url('../images/antique-book-3.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}*/
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  background-color: #e7ebef;
+  padding: 20px 30px;
+  align-items: center;
+}
+
+#intro h1 {
+  padding: 40px 30px;
+  line-height: 3rem;
+}
+#intro h2 {
+  min-width: 619.48px;
+  min-height: 64px;
+  color: #2b76df;
+}
+
+#intro h2 {
+  padding: 20px 30px;
+}
+
+h1 {
+  font-weight: 750;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+a:visited {
+  color: inherit;
+}
+
+// article background #f3f5f7;
+// border bottom : #e7ebef
+
+.card {
+  width: 400px;
+  overflow: hidden;
+  max-height: 500px;
+  padding: 10px 20px;
+  padding-top: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.card-first-paragraph {
+  padding-top: 20px;
+}
+
+#card1 {
+  border-top: solid 5px;
+  border-top-color: #2b76df;
+}
+
+#card2 {
+  border-top: solid 5px;
+  border-top-color: #ff9c02;
+}
+
+footer {
+  margin-top: 60px;
+  width: 100%;
+  height: 55vh;
+  border-top: 1px solid #e7ebef;
+  border-bottom: 1px solid #e7ebef;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  line-height: 60px;
+  padding: 10px;
+}
+footer ul li {
+  color: #585858;
+}
+
+.footer-wrapper {
+  max-width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.footer-left {
+  line-height: 40px;
+  padding: 10px;
+}
+
+.footer-left ul {
+  max-width: 400px;
+  overflow: hidden;
+  padding-right: 20px;
+}
+
+.footer-right {
+  max-width: 200px;
+  height: 150px;
+  background-color: white;
+  position: relative;
+  left: 100px;
+}
+
+.footer-right h3 {
+  padding-bottom: 20px;
+}
+
+.fa {
+  padding: 5px;
+}
+
+#footer-ad {
+  max-width: 40%;
+  margin: 0 auto;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.footer-title {
+  color: #2b76df;
+  font-size: 1rem;
+}
+
+#signature {
+  position: relative;
+  right: 500px;
+  top: 220px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+//FICCION
+
+.main-categories {
+  max-width: 50vw;
+  height: 130vh;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#sub-nav ol {
+  display: flex;
+}
+
+.sub-nav {
+  margin-bottom: 10px;
+}
+.sub-nav ol {
+  display: flex;
+  flex-direction: row;
+}
+
+.sub-nav ol li {
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #e7ebef;
+}
+
+.top-section {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 3px;
+}
+
+.top-section h1 {
+  line-height: 2rem;
+  margin-bottom: 9px;
+}
+
+.top-section p {
+  line-height: 2rem;
+}
+
+.book-row {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #d4d4d4ed;
+}
+
+.book-row h2 {
+  font-size: 100%;
+  margin-left: 10px;
+  line-height: 3rem;
+}
+
+.book-row img {
+  width: 150px;
+  height: 230px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.book-img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.img-detail {
+  max-width: 150px;
+  margin: 0 auto;
+}
+.img-detail h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.img-detail span {
+  color: #2b76df;
+  font-size: 0.8rem;
+}
+
+// ficcion-clasicos
