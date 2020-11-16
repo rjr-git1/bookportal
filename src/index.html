@@ -2,167 +2,111 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./js/index.js"></script>
     <title>Home</title>
     <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="./styles/media_queries.scss" />
   </head>
   <body>
     <header>
-      
       <div id="header-upper-div">
-       
-      <li><a href="./index.html"><span id="site-name">Aficcionados</span></a></li>
-     
+        <a href="./index.html"><span id="site-name">Aficcionados</span></a>
       </div>
 
       <div id="header-bottom-div">
-        <nav class="dropdown">
-          <button class="dropbtn">Temáticas</button>
-          <div class="dropdown-content">
-            <a href="./ficcion-novedades.html">Novedades</a>
-            <a href="./ficcion-clasicos.html">Clásicos</a>
-           
+        <div class="flex-header-row">
+          <nav class="dropdown">
+            <button class="dropbtn">Temáticas</button>
+            <div class="dropdown-content">
+              <a href="./ficcion-novedades.html">Novedades</a>
+              <a href="./ficcion-clasicos.html">Clásicos</a>
+            </div>
           </nav>
-        
-            <div class="search-bar-container">
-               
-        <i class="fa fa-search" aria-hidden="true"></i>
-        <input type="text name="search-bar" id="search-bar" placeholder="Buscar un libro, un autor"">
+
+          <div class="search-bar-container">
+            <input type="text" name="search-bar" id="search-bar" placeholder="Buscar un libro" />
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <button type="submit" id="search-btn">Buscar</button>
+          </div>
+        </div>
       </div>
+    </header>
 
-      <button type="submit" id="search-btn">Buscar</button>
+    <main id="main-index">
+      <div class="row-home">
+        <div class="col-home">
+          <div class="card" id="card1">
+            <a href="./ficcion-novedades.html"><h3>Novedades</h3></a>
+            <p class="card-first-paragraph">
+              Si eres apasionado de ficción te va gustar nuestra sección de libros. En ella podrás
+              ver los úlitmos lanzamientos y leer nuestras críticas.
+            </p>
+            <p>
+              Descubre los últimos lanzamientos y los estrenos más esperados de este fin de año!
+            </p>
+          </div>
 
-          
+          <div class="card" id="card2">
+            <a href="./ficcion-clasicos.html"><h3>Clásicos</h3></a>
+            <p class="card-first-paragraph">No te pierdas los clásicos de ciencia ficción!</p>
+            <p>En esta sección hacemos un repaso a algunas de las mejores novelas.</p>
+          </div>
         </div>
-        
-        </header>
-
-
-    <div class="wrapper">
-      <main id="main-index">
-      <div id="featured">
-     <article id="article-featured-left">
-          <div class="wrapper-article-header">
-          <span class="article-header-span">Entrevistas</span>
-          <h2 class="article-header-title">Daryl Gregory</h2>
+        <div id="image1-front-page">
+          <img
+            src="./images/frankenstein.jpg"
+            id="frankenstein-img"
+            alt="fotografía de una lectora de ciencia ficcion con un libro llamada Frankenstein en las manos"
+          />
         </div>
-          <a href="#"><img src="./images/Daryl_Gregory.jpg"  id="article-vignette1"alt=""></a>
-        </article>
-        <div class="flex-col">
-          <article class="article-featured">
-          <div class="wrapper-article-header">
-          <span class="article-header-span">Estreno: 24 de Noviembre!</span>
-          <h2 class="article-header-title">Ready Player One 2 de Ernest Cline</h2>
-        </div>
-          <a href="#"><img src="./images/ready_player_one.jpg"  id="article-vignette2"alt=""></a>
-        </article>
-       
-        <article class="article-featured">
-          <div class="wrapper-article-header">
-          <span class="article-header-span">Destacado</span>
-          <h2 class="article-header-title">Las 10 peliculas de ciencia ficción basadas en libros</h2>
-        </div>
-          <a href="#"><img src="./images/best_movies.jpg"  id="article-vignette3"alt=""></a>
-        </article>
-</div>
-
       </div>
-      <!--
-          <div id="antique-book"></div>
-          <section id="intro">
-          <h1>Bienvenido en TOPLIBRO, el portal de literatura especializada en obras de ciencia ficción</h1>
-         
-          <h2>Te proponemos una selección de libros. Explora nuestras temáticas y encuentra tu libro!</h2>
-     
-      </section>
-        
-            <div class="card" id="card1">
-              <img src="" alt="" />
-              <a href="#"><h3>Libros de ficción</h3></a>
-              <p class="card-first-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, deserunt
-                consequatur? Minima sapiente nostrum quo voluptas doloribus autem blanditiis fugit!
-                Quasi quod nobis cupiditate error, beatae mollitia fuga maxime vero!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, deserunt
-                consequatur? Minima sapiente nostrum quo voluptas doloribus autem blanditiis fugit!
-                Quasi quod nobis cupiditate error, beatae mollitia fuga maxime vero!
-              </p>
-            </div>
+    </main>
 
-            <div class="card" id="card2">
-              <img src="" alt="" />
-              <h3>Libros de no-ficción</h3>
-              <p class="card-first-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, deserunt
-                consequatur? Minima sapiente nostrum quo voluptas doloribus autem blanditiis fugit!
-                Quasi quod nobis cupiditate error, beatae mollitia fuga maxime vero!
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, deserunt
-                consequatur? Minima sapiente nostrum quo voluptas doloribus autem blanditiis fugit!
-                Quasi quod nobis cupiditate error, beatae mollitia fuga maxime vero!
-              </p>
-            </div>-->
-          
-        </section>
-      </main>
-    </div>
-
-
-    <footer> 
-      <img id="footer-ad" src="./images/footer-ad.jpg" alt="">
-   <div class="footer-wrapper">
-    
-        <div class="footer-left" id= row1>
-         <h3 class="footer-title">Temáticas</h3>
-         <ul>
-           <li>
-            <a href="./ficcion-novedades.html">Novedades</a></li>
-           <li>
-            <a href="./ficcion-clasicos.html">Clásicos</a></li>
-
-         
-             </div>
-
-        <div class="footer-left" id=row2>
-       <h3 class="footer-title">Autores</h3>
-       <ul>
-         <li>Eva García Sáenz de Urturi</li>
-         <li>Sandra Barneda</li>
-         <li>Paulo Coelho</li>
-         <li>Curro Cañete</li>
-         <li>Carlos Ríos</li>
-         <li>María Oruña</li>
-         <li>Manel Loureiro</li>
-
-        </div>
-
-        <div class="footer-left" id="row3">
-          <h3 class="footer-title">Libros</h3>
+    <footer>
+      <img id="footer-ad" src="./images/footer-ad.jpg" alt="" />
+      <div class="footer-wrapper">
+        <div class="footer-left" id="row1">
+          <h3 class="footer-title">Temáticas</h3>
           <ul>
-            <li>Aquitania</li>
-            <li>Un océano para llegar a ti</li>
-            <li>El asesinato de Platón</li>
-            <li>Como polvo en el viento</li>
-            <li>Cuentos de Lucía, mi pediatra 2</li>
-            <li>Anhelo (Serie Crave 1)</li>
-            <li>Siete mentiras</li>
-            </div>
-  
-
-             <div class="footer-right">
-                <h3>Redes sociales</h3>
-               <a href="#" id= "twitter-link"> <i class="fa fa-twitter fa-2x"  aria-hidden="true"></i></a>
+            <li><a href="./ficcion-novedades.html">Novedades</a></li>
+            <li><a href="./ficcion-clasicos.html">Clásicos</a></li>
+          </ul>
+         </div>
+          <div class="footer-left" id="row2">
+            <h3 class="footer-title">Autores</h3>
+            <ul>
+              <li><a href="#"></a>C.A. Fletcher</li>
+              <li><a href="#"></a> Huxley</li>
+            </ul>
+          </div>
+          <div class="footer-left" id="row3">
+            <h3 class="footer-title">Libros</h3>
+            <ul>
+              <li>
+                <a href="./un_chico_y_su_perro.html">Un chico y su perro en el fin del mundo</a>
+              </li>
+              <li><a href="./un_mundo_feliz.html">Un mundo feliz</a></li>
+            </ul>
+          </div>   
+          <div class="footer-right">
+            <h3>Redes sociales</h3>
+            <ul>
+              <li>
+                <a href="#" id="twitter-link">
+                  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
                 <a href="" id="fb-link"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-    </div>
+              </li>
+            </ul>
+          </div>
 
- 
+        </div>
     
-<span id ="signature"> <i>Raphaël Boury, UOC 2020</i>.</span>
-  </footer>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -10,104 +10,94 @@
   </head>
   <body>
     <header>
-      
       <div id="header-upper-div">
-       
-      <li><a href="/index.html"><span id="site-name">Aficcionados</span></a></li>
-     
+        <a href="/index.html"><span id="site-name">Aficcionados</span></a>
       </div>
 
       <div id="header-bottom-div">
+        <div class="flex-header-row">
         <nav class="dropdown">
           <button class="dropbtn">Temáticas</button>
           <div class="dropdown-content">
             <a href="/ficcion-novedades.html">Novedades</a>
             <a href="/ficcion-clasicos.html">Clásicos</a>
-           
-          </div></nav>
+        </div></nav>
         
-            <div class="search-bar-container">
-               
-        <i class="fa fa-search" aria-hidden="true"></i>
-        <input type="text name=" search-bar"="" id="search-bar" placeholder="Buscar un libro, un autor" "="">
+        <div class="search-bar-container">
+           <input type="text" name="search-bar" id="search-bar" placeholder="Buscar un libro" "="">
+           <i class="fa fa-search" aria-hidden="true"></i>
+           <button type="submit" id="search-btn">Buscar</button>
       </div>
-
-      <button type="submit" id="search-btn">Buscar</button>
-
-          
-        </div>
-        
-        </header>
+    </div>
+      </div>
+    </header>
+    
     
       <main class="main-categories">
            <div class="sub-nav">
           <ol>
-            <li><a href="/index.html"><span><h6>Inicio</h6></span></a></li>
-            <div class="text-indent">></div>
+            <li><a href="/index.html"><span class="sub-nav-bold">Inicio</span></a></li>
+            <div class="text-indent">/</div>
             <li><a href="/ficcion-clasicos.html"><span>Clásicos</span></a></li>  
-                   
+                  
           </ol>
         </div>
 
         <hr>
        
       <div class="top-section">
-          <h1>Clásicos</h1>
+        <h1>Clásicos</h1>
           <p>Los clásicos de ciencia ficción que no se pueden perder</p>
-        </div>
+       </div>
+       <div class="row-categories">
+        <div class="column-categories">
+          <a href="/un_mundo_feliz.html"><img src="/un_mundo_feliz.a6bbdea5.jpg" alt="portada libro 'un mundo feliz'"></a>
+          <div class="img-detail">
+            <h5> UN MUNDO FELIZ. </h5>
+            <span>Aldous Huxley</span>
+          </div>
+          </div>
 
-        <div class="book-row">
-             <div class="book-row-header">
-              <h2 class="book-header">Clásicos</h2> 
-             </div>
-                        
-            <div class="book-img-container">
-              <div class="flex-col">
-              <img src="/un_mundo_feliz.a6bbdea5.jpg" alt="">
-              <div class="img-detail">
-                <h5> UN MUNDO FELIZ. </h5>
-                <span>Aldous Huxley</span>
-              </div>
-            </div>
-            <div class="flex-col">
-              <img src="/1984_Orwell.810224a0.jpg" alt="">
+         
+            <div class="column-categories">
+              <img src="/1984_Orwell.810224a0.jpg" alt="portada libro '1984'">
               <div class="img-detail">
                 <h5>1984</h5>
                 <span>George Orwell</span>
               </div>
             </div>
-            <div class="flex-col">
-              <img src="/viaje_al_centro_de_la_tierra.7a785d88.jpg" id="img-black-mirror" alt="">
-              <div class="img-detail">
-                <h5>Viaje al centro de la tierra</h5>
-                <span>Julio Verne</span>
-              </div>
-            </div>
-            <div class="flex-col">
-              <img src="/ovejas_electricas_philip_k_dick.b50a402d.jpg" alt="">
-              <div class="img-detail">
-                <h5>¿Sueñan los androides con overjas eléctricas?</h5>
-                <span>Philip K. Dick</span>
-              </div>
-            </div>
-             <div class="flex-col">
-              <img src="/fahrenheit_451.6b1571e3.jpg" alt="">
-              <div class="img-detail">
-                <h5>Fahrenheit 451</h5>
-                <span>Ray Bradbury</span>
-              </div>
-            </div>
-            </div>
-       </div>
 
-     
+          <div class="column-categories">
+            <img src="/viaje_al_centro_de_la_tierra.7a785d88.jpg" id="img-black-mirror" alt="portada libro 'Viaje al centro de la tierra'">
+            <div class="img-detail">
+              <h5>Viaje al centro de la tierra</h5>
+              <span>Julio Verne</span>
+            </div>
+          </div>
+            
+          <div class="column-categories">
+            <img src="/ovejas_electricas_philip_k_dick.b50a402d.jpg" alt="portada libro '¿Sueñan los androides con overjas eléctricas?'">
+            <div class="img-detail">
+              <h5>¿Sueñan los androides con overjas eléctricas?</h5>
+              <span>Philip K. Dick</span>
+            </div>
+          </div>
 
-        
-     
+        <div class="column-categories">
+          <img src="/fahrenheit_451.6b1571e3.jpg" alt="portada libro 'Fahrenheit 451'">
+          <div class="img-detail">
+            <h5>Fahrenheit 451</h5>
+            <span>Ray Bradbury</span>
+          </div>
+        </div>
+        </div>
+       
+ 
       </main>
-    
 
 
+
+ 
     <footer> 
       <img id="footer-ad" src="/footer-ad.acf1684c.jpg" alt="">
    <div class="footer-wrapper">
@@ -115,46 +105,42 @@
         <div class="footer-left" id="row1">
          <h3 class="footer-title">Temáticas</h3>
          <ul>
-           <li>Libros de ficción</li>
-           <li>Libros de no-ficción</li>
+           <li>
+            <a href="/ficcion-novedades.html">Novedades</a></li>
+           <li>
+            <a href="/ficcion-clasicos.html">Clásicos</a></li>
+
          
              </ul></div>
 
         <div class="footer-left" id="row2">
        <h3 class="footer-title">Autores</h3>
        <ul>
-         <li>Eva García Sáenz de Urturi</li>
-         <li>Sandra Barneda</li>
-         <li>Paulo Coelho</li>
-         <li>Curro Cañete</li>
-         <li>Carlos Ríos</li>
-         <li>María Oruña</li>
-         <li>Manel Loureiro</li>
-
+         <li><a href="#"></a>C.A. Fletcher</li>
+         <li><a href="#"></a> Huxley</li>
         </ul></div>
 
         <div class="footer-left" id="row3">
           <h3 class="footer-title">Libros</h3>
           <ul>
-            <li>Aquitania</li>
-            <li>Un océano para llegar a ti</li>
-            <li>El asesinato de Platón</li>
-            <li>Como polvo en el viento</li>
-            <li>Cuentos de Lucía, mi pediatra 2</li>
-            <li>Anhelo (Serie Crave 1)</li>
-            <li>Siete mentiras</li>
-            </ul></div>
+
+            <li><a href="/un_chico_y_su_perro.html">Un chico y su perro en el fin del mundo</a></li>
+            <li><a href="/un_mundo_feliz.html">Un mundo feliz</a></li>
+     
+          
+           </ul></div>
   
 
              <div class="footer-right">
                 <h3>Redes sociales</h3>
-               <a href="#" id="twitter-link"> <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                <a href="" id="fb-link"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                <ul>
+                  <li><a href="#" id="twitter-link"> <i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                  <li><a href="" id="fb-link"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+               
+                
     </div>
 
- 
-    
-<span id="signature"> <i>Raphaël Boury, UOC 2020</i>.</span>
   </div></footer>
   </body>
 </html>

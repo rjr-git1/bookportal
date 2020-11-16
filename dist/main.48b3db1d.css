@@ -8,7 +8,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap");
 html,
 body,
 div,
@@ -173,18 +173,13 @@ h3 {
 }
 
 #site-name {
-  margin-top: 30px;
-  padding-left: 30px;
-  font: 2rem "Pacifico", cursive;
+  font-family: "Goldman", cursive;
+  font-size: 2rem;
   color: #f9f9f9;
 }
 
-a:hover {
-  cursor: pointer;
-}
-
 header {
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   background-color: #302b2b;
   font-family: "Roboto", sans-serif;
@@ -192,24 +187,35 @@ header {
   display: flex;
   flex-direction: column;
   background-image: url(/ficition_image_bg.8a494bb2.jpg);
-  background-repeat: repeat;
+  background-size: cover;
   background-position: center bottom;
   background-size: auto;
   margin-bottom: 30px;
 }
 
+.sub-nav-bold {
+  font-weight: bold;
+}
+
 #header-upper-div {
-  width: 100vw;
+  width: 100%;
   height: 8vh;
 }
 
-#header-bottom-div {
-  width: 100%;
-  height: vh;
+#header-upper-div li {
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+.flex-header-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  width: 100%;
   justify-content: center;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 /* Dropdown Button */
@@ -270,7 +276,7 @@ header {
 
 .fa-search {
   position: relative;
-  left: 30px;
+  left: -50px;
   top: 10px;
   color: #afabab;
 }
@@ -292,116 +298,29 @@ header {
   background-color: #216fa4;
 }
 
-.wrapper-article-header {
-  color: white;
-  font-weight: 1000;
-  position: relative;
-  top: 80px;
-  left: 5px;
-  z-index: 1;
-}
-
-.article-featured {
-  background-color: blue;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.article-header-title {
-  width: 300px;
-  position: relative;
-  font-size: 1.3rem;
-  top: 10px;
-  z-index: 1;
-}
-
-.article-header-span {
-  font-size: 0.8rem;
-  background-color: #979797;
-}
-
-#article-vignette1 {
-  width: 100%;
-  height: 500px;
-}
-
-#article-vignette2 {
-  width: 100%;
-  height: auto;
-}
-
-#article-vignette3 {
-  width: 100%;
-  height: auto;
-}
-
-#featured img:hover {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.main-index {
-  max-width: 100vw;
-  height: 130vh;
-  padding: 20px 20px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-}
-
 .wrapper {
   display: flex;
   justify-content: center;
 }
 
-#featured {
-  width: 60vh;
-  height: 100%;
+#main-index {
+  width: 100%;
+  height: auto;
+  padding: 10px 10px;
+  margin: 0 auto;
+}
+
+.row-home {
   display: flex;
-  flex-direction: flex-row;
+  flex-direction: row;
   justify-content: center;
 }
 
-section {
-  margin-bottom: 50px;
-}
-
-/*
-#antique-book {
-  width: 1200px;
-  height: 800px;
-  background-image: url('../images/antique-book-3.jpg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
-
-#intro {
-  display: flex;
+.col-home {
   flex-direction: column;
-  background-color: #e7ebef;
-  padding: 20px 30px;
-  align-items: center;
+  flex: 0.5;
 }
 
-#intro h1 {
-  padding: 40px 30px;
-  line-height: 3rem;
-}
-#intro h2 {
-  min-width: 619.48px;
-  min-height: 64px;
-  color: #2b76df;
-}
-
-#intro h2 {
-  padding: 20px 30px;
-}
-*/
 a:visited {
   color: inherit;
 }
@@ -410,14 +329,16 @@ a:visited {
   width: 400px;
   overflow: hidden;
   max-height: 500px;
-  padding: 10px 20px;
+  padding: 20px 20px;
   padding-top: 30px;
   letter-spacing: 2px;
   margin-bottom: 30px;
+  margin: 0 50px;
 }
 
 .card-first-paragraph {
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 #card1 {
@@ -430,15 +351,20 @@ a:visited {
   border-top-color: #ff9c02;
 }
 
+#frankenstein-img {
+  width: 500px;
+  height: auto;
+}
+
 footer {
   margin-top: 60px;
   width: 100%;
-  height: 55vh;
+  height: auto;
   border-top: 1px solid #e7ebef;
   border-bottom: 1px solid #e7ebef;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   padding-top: 50px;
   line-height: 60px;
   padding: 10px;
@@ -476,6 +402,11 @@ footer ul li {
   left: 100px;
 }
 
+.footer-right ul {
+  display: flex;
+  flex-direction: row;
+}
+
 .footer-right h3 {
   padding-bottom: 20px;
 }
@@ -485,10 +416,10 @@ footer ul li {
 }
 
 #footer-ad {
-  max-width: 40%;
-  margin: 0 auto;
+  width: 800px;
   height: auto;
-  padding-bottom: 50px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .footer-title {
@@ -496,17 +427,9 @@ footer ul li {
   font-size: 1rem;
 }
 
-#signature {
-  position: relative;
-  right: 500px;
-  top: 220px;
-  margin: 0 auto;
-  padding-top: 40px;
-}
-
 .main-categories {
-  max-width: 50vw;
-  height: 130vh;
+  max-width: 100vw;
+  height: auto;
   padding: 20px 20px;
   display: flex;
   flex-direction: column;
@@ -556,34 +479,28 @@ hr {
   line-height: 2rem;
 }
 
-.book-row {
+.row-categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  height: 400px;
+}
+
+.column-categories {
+  padding-top: 20px;
+  border: solid #575656 1px;
   display: flex;
   flex-direction: column;
-  background-color: #d4d4d4ed;
+  align-items: center;
+  flex: 1;
+  margin-bottom: 10px;
 }
 
-.book-row h2 {
-  font-size: 100%;
-  margin-left: 10px;
-  line-height: 3rem;
-}
-
-.book-row img {
+.column-categories img {
   width: 150px;
   height: 230px;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.book-img-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-left: 100px;
-  margin-top: 20px;
-  overflow: hidden;
 }
 
 .img-detail {
@@ -599,6 +516,59 @@ hr {
 .img-detail span {
   color: #2b76df;
   font-size: 0.8rem;
+}
+
+.main-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-img-big {
+  display: flex;
+  justify-content: center;
+}
+
+#un_chico_img-big {
+  width: 30%;
+  height: auto;
+}
+
+#un_mundo_img_big {
+  width: 50%;
+  height: auto;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+#details-container {
+  max-width: 50vw;
+  margin-top: 30px;
+  overflow: hidden;
+  font-size: 1.3rem;
+}
+
+.book-info {
+  line-height: 22px !important;
+}
+
+.sinopsis-title {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.sinopsis-subtitle {
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.sinopsis-title {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=/main.48b3db1d.css.map */
