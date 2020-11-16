@@ -1,1 +1,0 @@
-{"version":3,"sources":["../styles/main.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;AAKJ;EACI,YAHG;EAIH","file":"js.fcffc47e.css","sourceRoot":"../src/html","sourcesContent":["*{\r\n    margin:0;\r\n    padding:0\r\n}\r\n\r\n$sup : lightgray;\r\n\r\nbody{\r\n    background:$sup;\r\n    height: 200vh;\r\n}"]}
