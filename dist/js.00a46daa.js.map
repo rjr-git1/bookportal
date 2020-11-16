@@ -1,1 +1,1 @@
-{"version":3,"sources":["js/index.js"],"names":["name","console","log"],"mappings":"AAAA,IAAMA,IAAI,GAAG,OAAb;AACAC,OAAO,CAACC,GAAR,iBAAqBF,IAArB","file":"js.00a46daa.js","sourceRoot":"../src","sourcesContent":["const name = 'world';\r\nconsole.log(`Hello ${name}`);\r\n"]}
+{"version":3,"sources":["js/index.js"],"names":[],"mappings":"AAAA;AACA","file":"js.00a46daa.js","sourceRoot":"../src","sourcesContent":["//const name = 'world';\r\n//console.log(`Hello ${name}`);\r\n"]}

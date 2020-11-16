@@ -6,7 +6,6 @@ const searchBooks = async (searchText) => {
   const res = await fetch('./books.json');
   const books = await res.json;
   JSON.stringify(books);
-  console.log(books);
 
   //Get matches to current text input
   /*
@@ -17,7 +16,5 @@ const searchBooks = async (searchText) => {
 */
   // Paso final es crear el outputHTML()
 };
-
-search.addEventListener('input', () => searchBooks(search.value));
-console.log(searchBooks('Un chico y su perro en el fin del mundo'));
+//search.addEventListener('input', () => searchBooks(search.value));
 searchBooks();

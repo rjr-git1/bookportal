@@ -174,7 +174,7 @@ h3 {
 
 //Header and nav
 header {
-  width: 100%;
+  width: fill-available;
   height: 10vh;
   background-color: #302b2b;
   font-family: 'Roboto', sans-serif;
@@ -407,7 +407,7 @@ footer ul li {
   padding: 5px;
 }
 
-#footer-ad {
+.footer-ad {
   width: 800px;
   height: auto;
   margin: 0 auto;
@@ -540,19 +540,44 @@ hr {
   font-size: 1.3rem;
 }
 
+.book-sinopsis {
+  margin-bottom: 30px;
+}
+.book-sinopsis p {
+  padding: 20px 0;
+}
+
 .book-info {
   line-height: 22px !important;
 }
 .sinopsis-title {
-  margin-top: 16px;
+  padding-top: 15px;
   margin-bottom: 10px;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 .sinopsis-subtitle {
+  margin-top: 15px;
   margin-bottom: 8px;
-  font-weight: 800;
+  font-weight: 600;
 }
 .sinopsis-title {
   font-size: 1.2rem;
+}
+
+.video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

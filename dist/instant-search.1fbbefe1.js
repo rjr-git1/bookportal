@@ -938,8 +938,7 @@ var searchBooks = /*#__PURE__*/function () {
 
           case 5:
             books = _context.sent;
-            JSON.stringify(books);
-            console.log(books); //Get matches to current text input
+            JSON.stringify(books); //Get matches to current text input
 
             /*
             let matches = books.filter((book) => {
@@ -949,7 +948,7 @@ var searchBooks = /*#__PURE__*/function () {
             */
             // Paso final es crear el outputHTML()
 
-          case 8:
+          case 7:
           case "end":
             return _context.stop();
         }
@@ -960,12 +959,9 @@ var searchBooks = /*#__PURE__*/function () {
   return function searchBooks(_x) {
     return _ref.apply(this, arguments);
   };
-}();
+}(); //search.addEventListener('input', () => searchBooks(search.value));
 
-search.addEventListener('input', function () {
-  return searchBooks(search.value);
-});
-console.log(searchBooks('Un chico y su perro en el fin del mundo'));
+
 searchBooks();
 },{"@babel/runtime/regenerator":"../node_modules/@babel/runtime/regenerator/index.js","@babel/runtime/helpers/asyncToGenerator":"../node_modules/@babel/runtime/helpers/asyncToGenerator.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -995,7 +991,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53668" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57057" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
