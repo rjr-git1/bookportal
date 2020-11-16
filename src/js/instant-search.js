@@ -8,13 +8,13 @@ const searchBooks = async (searchText) => {
   JSON.stringify(books);
   console.log(books);
 
-  //let text = books.text(); // leer cuerpo de la respuesta como texto
   //Get matches to current text input
-  /* let matches = books.filter((books) => {
+  /*
+  let matches = books.filter((book) => {
     const regex = new RegExp(`^${searchText}`, 'gi');
-    return books.name.match(regex) || books.abbr.match(regex);
-  });*/
-
+    return book.name.match(regex) || book.abbr.match(regex);
+  });
+*/
   // Paso final es crear el outputHTML()
 };
 
